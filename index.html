@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator | Sebastian Guerrero</title>
+    <meta name="description" content="Simple calculator website." />
+    <link rel="canonical" href="url" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="url./assets/favicon.png" />
+    <link rel="apple-touch-icon" href="url./assets/favicon.png" />
+    <meta name="theme-color" content="principal color" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      property="og:title"
+      name="twitter:title"
+      content="Calculator | Sebastian Guerrero"
+    />
+    <meta
+      property="og:image"
+      name="twitter:image"
+      content="url./assets/game.png"
+    />
+    <meta property="og:url" name="twitter:url" content="url" />
+    <meta
+      property="og:description"
+      name="twitter:description"
+      content="Simple calculator website."
+    />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <h1>Simple Calculator</h1>
+    <main>
+      <div class="container">
+        <div class="calculator">
+          <div class="result btn-seclig">
+            <div id="result-op"></div>
+          </div>
+          <input data-reset class="reset btn btn-ter" type="button" value="C" />
+          <input data-math class="btn btn-prim" type="button" value="7" />
+          <input data-math class="btn btn-prim" type="button" value="8" />
+          <input data-math class="btn btn-prim" type="button" value="9" />
+          <input data-math class="btn btn-sec" type="button" value="/" />
+          <input data-math class="btn btn-prim" type="button" value="4" />
+          <input data-math class="btn btn-prim" type="button" value="5" />
+          <input data-math class="btn btn-prim" type="button" value="6" />
+          <input data-math class="btn btn-sec" type="button" value="*" />
+          <input data-math class="btn btn-prim" type="button" value="1" />
+          <input data-math class="btn btn-prim" type="button" value="2" />
+          <input data-math class="btn btn-prim" type="button" value="3" />
+          <input data-math class="btn btn-sec" type="button" value="-" />
+          <input
+            data-math
+            class="btn btn-prim btn-click"
+            type="button"
+            value="0"
+          />
+          <input data-math class="btn btn-prim" type="button" value="." />
+          <input data-equal class="btn btn-ter" type="button" value="=" />
+          <input data-math class="btn btn-sec" type="button" value="+" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>
+          Developed and designed by Edwin Sebastián Guerrero Pesántez. &copy;
+          2022. All rights reserved.
+        </h2>
+      </div>
+    </footer>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
