@@ -26,12 +26,13 @@ $numbers.forEach((num) => {
 d.addEventListener("click", (e) => {
   if (e.target === $equal) {
     /^([0-9]+|-?[0-9]+)(\.?[0-9]*)[-+*/]?[0-9]+(\.?[0-9]*)$/.test(
-      $result.textContent &&
-        $result.textContent !== "Infinity" &&
-        $result.textContent !== "NaN"
+      $result.textContent
     )
       ? ($result.textContent = `${eval($result.textContent)}`)
       : ($result.textContent = "Invalid operation");
+
+    if ($result.textContent === "Infinity" || $result.textContent === "NaN")
+      $result.textContent = "Invalid operation";
     clearTimeout(interval);
   }
   if (e.target === $reset) {
